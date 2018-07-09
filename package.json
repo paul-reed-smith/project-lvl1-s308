@@ -1,6 +1,6 @@
 {
   "name": "project-dmivtr-hexlet-first",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "training project for hexlet.io",
   "scripts": {
     "test": "test",
@@ -27,7 +27,9 @@
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^5.1.0",
     "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-import": "^2.13.0"
+  },
+  "dependencies": {
     "readline-sync": "^1.4.9"
   },
   "bin": {
