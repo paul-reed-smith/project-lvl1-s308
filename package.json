@@ -1,8 +1,7 @@
 {
   "name": "project-dmivtr-hexlet-first",
   "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "training project for hexlet.io",
   "scripts": {
     "test": "test",
     "babel-node": "babel-node",
