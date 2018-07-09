@@ -1,2 +1,2 @@
 
-# h1 First hexlet project 
+# First hexlet project 
