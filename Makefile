@@ -7,5 +7,7 @@ publish:
 	npm publish
 test:
 	npm test
+lint:
+	 npm run eslint
 
 .PHONY: test
