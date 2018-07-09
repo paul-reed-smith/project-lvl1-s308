@@ -4,16 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "babel-node": "babel-node"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dmivtr/project-lvl1-s308.git"
   },
-  "author": "",
+  "author": "Dmivrtr",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dmivtr/project-lvl1-s308/issues"
   },
-  "homepage": "https://github.com/dmivtr/project-lvl1-s308#readme"
+  "homepage": "https://github.com/dmivtr/project-lvl1-s308#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
 }
+
+
