@@ -7,6 +7,6 @@ publish:
 test:
 	npm test
 lint:
-	 npm run eslint
+	 npm run eslint .
 
 .PHONY: test
