@@ -1,6 +1,6 @@
 {
   "name": "project-dmivtr-hexlet-first",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "training project for hexlet.io",
   "scripts": {
     "test": "test",
