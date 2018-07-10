@@ -2,6 +2,11 @@
   "name": "project-dmivtr-hexlet-first",
   "version": "1.0.5",
   "description": "training project for hexlet.io",
+  "keywords": [
+    "dmivtr", 
+    "brain-games",
+    "hexlet-learning"
+  ],
   "scripts": {
     "test": "test",
     "babel-node": "babel-node",
