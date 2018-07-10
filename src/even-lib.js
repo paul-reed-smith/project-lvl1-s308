@@ -11,7 +11,7 @@ const isEvenGame = () => {
   for (let i = 1; i <= 3; i += 1) {
     const numberForAsk = Math.round(Math.random() * 100);
 
-    console.log(`Number is: ${numberForAsk}`);
+    console.log(`\nNumber is: ${numberForAsk}`);
 
     const userAnswer = readlineSync.question('Enter your answer: ');
 
@@ -19,18 +19,16 @@ const isEvenGame = () => {
       if ((answer.toLowerCase() === 'yes' && numberForAsk % 2 === 0) || (answer.toLowerCase() === 'no' && numberForAsk % 2 !== 0)) {
         return true;
       }
-
       return false;
     };
 
     if (isAnswerCorrect(userAnswer)) {
-      console.log('Correct!');
+      console.log('\nCorrect!');
+    } else {
+      return console.log(` "${userAnswer}" is not a correct answer! Correct was "${numberForAsk % 2 === 0 ? 'yes' : 'no'}" \n Let's try again, ${userName}!`);
     }
-
-    return `${userAnswer} is not a correct answer! Correct was ${numberForAsk % 2 === 0 ? 'yes' : 'no'}`;
   }
-
-  return `Congratulations, ${userName}`;
+  return console.log(`\nCongratulations, ${userName}`);
 };
 
 export default isEvenGame;
