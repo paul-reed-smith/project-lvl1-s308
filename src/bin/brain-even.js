@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import isEvenGame from '../even-lib';
 
-isEvenGame();
+import EvenGame from '../even-lib';
+
+EvenGame();
