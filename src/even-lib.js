@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
-import greeting from '..';
+import greeting from '.';
 
 // This file is main logic of game witch answers is number is even
+
 
 const evenGame = () => {
   const userName = greeting('Answer "yes" if number even otherwise answer "no".');
@@ -12,10 +13,12 @@ const evenGame = () => {
 
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (question === userAnswer) {
+    const correctAnswer = question % 2 === 0 ? 'yes' : 'no';
+
+    if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
-      return console.log(` "${userAnswer}" is not a correct answer! Correct was "${question % 2 === 0 ? 'yes' : 'no'}" \n Let's try again, ${userName}!`);
+      return console.log(` "${userAnswer}" is not a correct answer! Correct was "${correctAnswer}" \n Let's try again, ${userName}!`);
     }
   }
   return console.log(`Congratulations, ${userName}`);

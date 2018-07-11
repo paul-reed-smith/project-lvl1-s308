@@ -6,7 +6,7 @@ const greeting = (gameRule) => {
   if (gameRule !== '') { console.log(gameRule); }
 
   const userName = readlineSync.question('\nMay I have your name? ');
-  console.log(`Hello! ${userName} :)`);
+  console.log(`Hello! ${userName} :)\n`);
   return userName;
 };
 
