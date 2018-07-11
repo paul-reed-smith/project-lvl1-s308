@@ -1,6 +1,6 @@
 {
   "name": "project-dmivtr-hexlet-first",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "training project for hexlet.io",
   "keywords": [
     "dmivtr",
@@ -35,6 +35,7 @@
     "eslint-plugin-import": "^2.13.0"
   },
   "dependencies": {
+    "hexlet-pairs": "^1.0.8",
     "readline-sync": "^1.4.9"
   },
   "bin": {

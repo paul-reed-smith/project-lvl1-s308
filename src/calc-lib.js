@@ -1,52 +1,47 @@
 import readlineSync from 'readline-sync';
+import { cons, car, cdr } from 'hexlet-pairs';
+import greeting from '.';
 
-const twoDigitsRandomization = () => Math.round(Math.random() * 100);
+const twoDigitsRandom = () => Math.round(Math.random() * 100);
+
+const questionCreate = () => {
+  const num = twoDigitsRandom();
+
+  if (num > 60) {
+    return cons('+', (a, b) => a + b);
+
+  } else { if (num < 60 && num > 30) {
+      return cons('-', (a, b) => a - b);
+
+    } else {
+        return cons('*', (a, b) => a * b);
+    } 
+};
 
 const brainCalc = () => {
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello! ${userName} :)`);
+  const userName = greeting('What is the result of the expression?');
 
-  console.log('What is the result of the expression?');
+  for (let i = 0; i < 4; i += 1) {
+    const firstNum = twoDigitsRandomization();
+    const secondNum = twoDigitsRandomization();
 
-  let firstNum = twoDigitsRandomization();
-  let secondNum = twoDigitsRandomization();
+    const question = questionCreate();
+    const operator = car(question);
 
-  const sumOfNums = firstNum + secondNum;
-  console.log(`\nQuestion: ${firstNum} + ${secondNum}`);
-  let userAnswer = readlineSync.question('Enter your answer: ');
+    console.log(`Question: ${firstNum} ${operator} ${secondNum}`);
+    const userAnswer = readlineSync.question('Your answer: ');
 
-  if (Number(userAnswer) === sumOfNums) {
-    console.log('\nCorrect!');
-  } else {
-    return console.log(` "${userAnswer}" is not a correct answer! Correct was "${sumOfNums}" \n Let's try again, ${userName}!`);
+    const correctAnswer = cdr(question)(num1, num2);
+
+
+    if (userAnswer === correctAnswer) {
+      console.log('Correct!');
+    } else {
+      return console.log(` "${userAnswer}" is not a correct answer! Correct was "${correctAnswer}" \n Let's try again, ${userName}!`);
+    }
   }
 
-  firstNum = twoDigitsRandomization();
-  secondNum = twoDigitsRandomization();
-
-  const differenceOfNum = firstNum - secondNum;
-  console.log(`\nQuestion: ${firstNum} - ${secondNum}`);
-  userAnswer = readlineSync.question('Enter your answer: ');
-
-  if (Number(userAnswer) === differenceOfNum) {
-    console.log('\nCorrect!');
-  } else {
-    return console.log(` "${userAnswer}" is not a correct answer! Correct was "${sumOfNums}" \n Let's try again, ${userName}!`);
-  }
-
-  firstNum = twoDigitsRandomization();
-  secondNum = twoDigitsRandomization();
-
-  const multiplyNums = firstNum * secondNum;
-  console.log(`\nQuestion: ${firstNum} * ${secondNum}`);
-  userAnswer = readlineSync.question('Enter your answer: ');
-
-  if (Number(userAnswer) === multiplyNums) {
-    console.log('\nCorrect!');
-  } else {
-    return console.log(`\n"${userAnswer}" is not a correct answer! Correct was "${sumOfNums}" \n Let's try again, ${userName}!`);
-  }
-  return console.log(`\nCongratulations, ${userName}`);
+  return console.log(`Congratulations, ${userName}`);
 };
 
 export default brainCalc;
