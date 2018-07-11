@@ -22,10 +22,11 @@ const evenGame = () => {
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
-      return console.log(` "${userAnswer}" is not a correct answer! Correct was "${correctAnswer}" \n Let's try again, ${userName}!`);
+      console.log(` "${userAnswer}" is not a correct answer! Correct was "${correctAnswer}" \n Let's try again, ${userName}!`);
+      return;
     }
   }
-  return console.log(`Congratulations, ${userName}`);
+  console.log(`Congratulations, ${userName}`);
 };
 
 export default evenGame;
