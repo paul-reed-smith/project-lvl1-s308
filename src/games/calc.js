@@ -1,10 +1,12 @@
 import readlineSync from 'readline-sync';
 import { cons, car, cdr } from 'hexlet-pairs';
 
-const random = () => Math.round(Math.random() * 100);
+// This file is main logic of game which ask user to calculate some random expressions
+
+const getRandomNum = () => Math.round(Math.random() * 100);
 
 const questionCreate = () => {
-  const num = random();
+  const num = getRandomNum();
 
   if (num > 60) {
     return cons('+', (a, b) => a + b);
@@ -25,15 +27,15 @@ const brainCalc = () => {
   console.log(`Hello! ${userName} \n`);
 
   for (let i = 0; i < steps; i += 1) {
-    const firstNum = random();
-    const secondNum = random();
+    const firstNum = getRandomNum();
+    const secondNum = getRandomNum();
 
     const question = questionCreate();
     const operator = car(question);
 
     console.log(`Question: ${firstNum} ${operator} ${secondNum}`);
-    const userAnswer = Number(readlineSync.question('Your answer: '));
 
+    const userAnswer = Number(readlineSync.question('Your answer: '));
     const correctAnswer = cdr(question)(firstNum, secondNum);
 
 
