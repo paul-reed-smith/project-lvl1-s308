@@ -1,52 +1,39 @@
-import readlineSync from 'readline-sync';
-import { cons, car, cdr } from 'hexlet-pairs';
+
+import { cons } from 'hexlet-pairs';
+import getRandomNum from '../random';
+import gameEngine from './game-engine';
 
 // This file is main logic of game which ask user to calculate some random expressions
 
-const getRandomNum = () => Math.round(Math.random() * 100);
+const gameTask = 'What is the result of the expression?';
 
-const questionCreate = () => {
-  const num = getRandomNum();
+const minValue = 1;
+const maxValue = 4;
 
-  if (num > 60) {
-    return cons('+', (a, b) => a + b);
+const beginOfRange = 1;
+const endOfRange = 100;
+
+const getGameLogic = () => {
+  const num = getRandomNum(minValue, maxValue);
+
+  const a = getRandomNum(beginOfRange, endOfRange);
+  const b = getRandomNum(beginOfRange, endOfRange);
+
+  let res;
+  switch (num) {
+    case 1:
+      res = cons(`${a} + ${b}`, a + b);
+      break;
+    case 2:
+      res = cons(`${a} - ${b}`, a - b);
+      break;
+    case 3:
+      res = cons(`${a} * ${b}`, a * b);
+      break;
+    default:
   }
-  if (num < 60 && num > 30) {
-    return cons('-', (a, b) => a - b);
-  }
-  return cons('*', (a, b) => a * b);
+
+  return res;
 };
-
-const steps = 3;
-
-const brainCalc = () => {
-  console.log('Welcome to the Brain Games!');
-  console.log('What is the result of the expression?\n');
-
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello! ${userName} \n`);
-
-  for (let i = 0; i < steps; i += 1) {
-    const firstNum = getRandomNum();
-    const secondNum = getRandomNum();
-
-    const question = questionCreate();
-    const operator = car(question);
-
-    console.log(`Question: ${firstNum} ${operator} ${secondNum}`);
-
-    const userAnswer = Number(readlineSync.question('Your answer: '));
-    const correctAnswer = cdr(question)(firstNum, secondNum);
-
-
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}" \n Let's try again, ${userName}!`);
-      return;
-    }
-  }
-  console.log(`Congratulations, ${userName}`);
-};
-
-export default brainCalc;
+console.log('calc - ok');
+export default gameEngine(gameTask, getGameLogic);
