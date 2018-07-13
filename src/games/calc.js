@@ -35,5 +35,4 @@ const getGameLogic = () => {
 
   return res;
 };
-console.log('calc - ok');
 export default gameEngine(gameTask, getGameLogic);
