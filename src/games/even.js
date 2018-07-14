@@ -1,38 +1,22 @@
-import readlineSync from 'readline-sync';
+import cons from 'hexlet-pairs';
 import getRandomNum from '../random';
+import gameEngine from './game-engine';
 
 // This file is main logic of game witch answers is number is even
 
-const steps = 3;
+const gameTask = 'Answer "yes" if number even otherwise answer "no"';
 
 const isEven = num => num % 2 === 0;
 
 const minValue = 1;
 const maxValue = 100;
 
-const evenGame = () => {
-  console.log('Welcome to the Brain Games!');
-  console.log('Answer "yes" if number even otherwise answer "no".\n');
+const getGameLogic = () => {
+  const num = getRandomNum(minValue, maxValue);
+  const question = num;
 
-  const userName = readlineSync.question('\nMay I have your name? ');
-  console.log(`Hello! ${userName} \n`);
+  const answer = isEven(num) ? 'yes' : 'no';
 
-  for (let i = 1; i <= steps; i += 1) {
-    const question = getRandomNum(minValue, maxValue);
-    console.log(`Question : ${question}`);
-
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    const correctAnswer = isEven(question) ? 'yes' : 'no';
-
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(` "${userAnswer}" is not a correct answer! Correct was "${correctAnswer}" \n Let's try again, ${userName}!`);
-      return;
-    }
-  }
-  console.log(`Congratulations, ${userName}`);
+  return cons(question, answer);
 };
-
-export default evenGame;
+export default () => gameEngine(gameTask, getGameLogic);
