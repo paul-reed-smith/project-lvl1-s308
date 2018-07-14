@@ -26,4 +26,5 @@ const getGameLogic = () => {
 
   return cons(question, correctAnswer);
 };
+
 export default () => gameEngine(gameTask, getGameLogic);
