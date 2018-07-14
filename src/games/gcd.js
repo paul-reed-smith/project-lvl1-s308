@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import getRandomNum from '../random';
+import getRandomNum from '../utils';
 import gameEngine from '../game-engine';
 
 // This file is main logic of game which ask user to find gcd of two numbers
@@ -18,11 +18,11 @@ const beginOfRange = 1;
 const endOfRange = 100;
 
 const getGameLogic = () => {
-  const fNum = getRandomNum(beginOfRange, endOfRange);
-  const sNum = getRandomNum(beginOfRange, endOfRange);
+  const firstNum = getRandomNum(beginOfRange, endOfRange);
+  const secondNum = getRandomNum(beginOfRange, endOfRange);
 
-  const question = `${fNum} ${sNum}`;
-  const correctAnswer = findGCD(fNum, sNum);
+  const question = `${firstNum} ${secondNum}`;
+  const correctAnswer = findGCD(firstNum, secondNum);
 
   return cons(question, correctAnswer);
 };

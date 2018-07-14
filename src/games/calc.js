@@ -1,6 +1,6 @@
 
 import { cons } from 'hexlet-pairs';
-import getRandomNum from '../random';
+import getRandomNum from '../utils';
 import gameEngine from '../game-engine';
 
 // This file is main logic of game which ask user to calculate some random expressions
