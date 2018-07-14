@@ -1,6 +1,6 @@
 import { cons } from 'hexlet-pairs';
 import getRandomNum from '../random';
-import gameEngine from './game-engine';
+import gameEngine from '../game-engine';
 
 // This file is main logic of game witch answers is number is even
 
