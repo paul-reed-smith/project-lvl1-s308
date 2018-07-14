@@ -35,4 +35,4 @@ const getGameLogic = () => {
 
   return res;
 };
-export default gameEngine(gameTask, getGameLogic);
+export default () => gameEngine(gameTask, getGameLogic);

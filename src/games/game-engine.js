@@ -17,11 +17,11 @@ export default (gameTask, getGameLogic) => {
 
   for (let i = 0; i < steps; i += 1) {
     const gameLogic = getGameLogic();
+
     const question = car(gameLogic);
     console.log(`Question : ${question}`);
 
     const userAnswer = readlineSync.question('Your answer: ');
-
     const correctAnswer = cdr(gameLogic);
 
     if (String(userAnswer) === String(correctAnswer)) {
