@@ -13,6 +13,8 @@ const maxFirstProgressionItem = 100;
 const minHiddenItemNumber = 2;
 const maxHiddenItemNumber = 10;
 
+// an = a1 + d(n-1);
+
 const getGameLogic = () => {
   const numberOfProgressionItems = 10;
   const firstProgressionItem = getRandomNum(minFirstProgressionItem, maxFirstProgressionItem);
@@ -21,10 +23,9 @@ const getGameLogic = () => {
   const hiddenItemNumber = getRandomNum(minHiddenItemNumber, maxHiddenItemNumber);
 
   let res = '';
-  let progressionItem = firstProgressionItem;
   let correctAnswer = 0;
   for (let i = 0; i <= numberOfProgressionItems; i += 1) {
-    progressionItem += stepOfProgression;
+    const progressionItem = firstProgressionItem + (stepOfProgression * (i - 1));
     if (i !== hiddenItemNumber) {
       res += `${progressionItem} `;
     } else {
@@ -34,6 +35,6 @@ const getGameLogic = () => {
   }
   const question = res;
 
-  return cons(question, correctAnswer);
+  return cons(question, String(correctAnswer));
 };
 export default () => gameEngine(gameTask, getGameLogic);

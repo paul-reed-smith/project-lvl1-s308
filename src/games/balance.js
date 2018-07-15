@@ -41,7 +41,7 @@ const getGameLogic = () => {
   const question = getRandomNum(beginOfRange, endOfRange);
   const correctAnswer = getNumberBalanced(question);
 
-  return cons(question, correctAnswer);
+  return cons(question, String(correctAnswer));
 };
 
 export default () => gameEngine(gameTask, getGameLogic);

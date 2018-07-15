@@ -24,7 +24,7 @@ const getGameLogic = () => {
   const question = `${firstNum} ${secondNum}`;
   const correctAnswer = findGCD(firstNum, secondNum);
 
-  return cons(question, correctAnswer);
+  return cons(question, String(correctAnswer));
 };
 
 export default () => gameEngine(gameTask, getGameLogic);

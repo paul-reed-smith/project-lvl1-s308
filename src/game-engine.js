@@ -24,7 +24,7 @@ export default (gameTask, getGameLogic) => {
     const userAnswer = readlineSync.question('Your answer: ');
     const correctAnswer = cdr(gameLogic);
 
-    if (String(userAnswer) === String(correctAnswer)) {
+    if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
       console.log(`"${userAnswer}" is not a correct answer! Correct was "${correctAnswer}" \n Let's try again, ${userName}!`);

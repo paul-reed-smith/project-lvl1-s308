@@ -17,6 +17,6 @@ const getGameLogic = () => {
 
   const answer = isEven(num) ? 'yes' : 'no';
 
-  return cons(question, answer);
+  return cons(question, String(answer));
 };
 export default () => gameEngine(gameTask, getGameLogic);
