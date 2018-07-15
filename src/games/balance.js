@@ -2,10 +2,6 @@ import { cons } from 'hexlet-pairs';
 import getRandomNum from '../utils';
 import gameEngine from '../game-engine';
 
-// This file is main logic of game which ask user to find gcd of two numbers
-// Сбалансированное число – это число, в котором наименьшая цифра отличается от наибольшей не более чем на единицу
-// Порядок цифр в сбалансированном числе – по возрастанию
-
 const gameTask = 'Balance the given number.';
 
 const findSumOfDigits = (num) => {
