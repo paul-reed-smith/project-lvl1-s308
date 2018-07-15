@@ -13,8 +13,6 @@ const maxFirstProgressionItem = 100;
 const minHiddenItemNumber = 2;
 const maxHiddenItemNumber = 10;
 
-// an = a1 + d(n-1);
-
 const getGameLogic = () => {
   const numberOfProgressionItems = 10;
   const firstProgressionItem = getRandomNum(minFirstProgressionItem, maxFirstProgressionItem);
