@@ -1,6 +1,6 @@
 {
   "name": "project-dmivtr-hexlet-first",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "training project for hexlet.io",
   "keywords": [
     "dmivtr",
@@ -26,7 +26,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.5",
+    "babel-eslint": "^8.2.6",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "^4.19.1",
@@ -42,7 +42,8 @@
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
     "brain-calc": "dist/bin/brain-calc.js",
-    "brain-gcd": "dist/bin/brain-gcd.js"
+    "brain-gcd": "dist/bin/brain-gcd.js",
+    "brain-balance": "dist/bin/brain-balance.js"
   },
   "files": [
     "dist"
