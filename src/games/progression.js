@@ -21,17 +21,16 @@ const getGameLogic = () => {
   const hiddenItemNumber = getRandomNum(minHiddenItemNumber, maxHiddenItemNumber);
 
   let res = '';
-  let correctAnswer = 0;
   for (let i = 0; i <= numberOfProgressionItems; i += 1) {
     const progressionItem = firstProgressionItem + (stepOfProgression * (i - 1));
     if (i !== hiddenItemNumber) {
       res += `${progressionItem} `;
     } else {
       res += '.. ';
-      correctAnswer = progressionItem;
     }
   }
   const question = res;
+  const correctAnswer = firstProgressionItem + (stepOfProgression * (hiddenItemNumber - 1));
 
   return cons(question, String(correctAnswer));
 };
