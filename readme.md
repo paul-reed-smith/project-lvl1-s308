@@ -13,7 +13,11 @@ Before installing, make sure you have [npm](https://www.npmjs.com/get-npm) and [
 
 ```npm i -g project-dmivtr-hexlet-first```
 
-_This will install package globaly_
+This will install package globaly
+
+#### Example playing 
+
+[![asciicast](https://asciinema.org/a/17ANnm5Vo4UXM0nY4b3EZRP0Z.png)](https://asciinema.org/a/17ANnm5Vo4UXM0nY4b3EZRP0Z)
 
 #### Even game 
 Answer "yes" if number even otherwise answer "no".
