@@ -16,7 +16,7 @@ Before installing, make sure you have [npm](https://www.npmjs.com/get-npm) and [
 _This will install package globaly_
 
 #### Even game 
-Answer "yes" if number even otherwise answer "no"
+Answer "yes" if number even otherwise answer "no".
 
 ```brain-even```
 
@@ -26,7 +26,7 @@ What is the result of the expression?
 ```brain-calc```
 
 #### GCD
-Find the greatest common divisor of given numbers
+Find the greatest common divisor of given numbers.
 
 ```brain-gcd```
 
