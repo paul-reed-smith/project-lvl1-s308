@@ -1,5 +1,4 @@
-import { cons } from 'hexlet-pairs';
-import getRandomNum from '../utils';
+import { gameLogicForIs } from '../utils';
 import gameEngine from '../game-engine';
 
 const gameTask = 'Is this number prime?';
@@ -15,13 +14,6 @@ const isPrime = (num) => {
 const beginOfRange = 1;
 const endOfRange = 100;
 
-const getGameLogic = () => {
-  const num = getRandomNum(beginOfRange, endOfRange);
-  const question = num;
-
-  const answer = isPrime(num) ? 'yes' : 'no';
-
-  return cons(question, String(answer));
-};
+const getGameLogic = () => gameLogicForIs(isPrime, beginOfRange, endOfRange);
 
 export default () => gameEngine(gameTask, getGameLogic);

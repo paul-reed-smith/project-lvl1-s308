@@ -1,6 +1,5 @@
-import { cons } from 'hexlet-pairs';
-import getRandomNum from '../utils';
 import gameEngine from '../game-engine';
+import { gameLogicForIs } from '../utils';
 
 // This file is main logic of game witch answers is number is even
 
@@ -11,12 +10,6 @@ const isEven = num => num % 2 === 0;
 const minValue = 1;
 const maxValue = 100;
 
-const getGameLogic = () => {
-  const num = getRandomNum(minValue, maxValue);
-  const question = num;
+const getGameLogic = () => gameLogicForIs(isEven, minValue, maxValue);
 
-  const answer = isEven(num) ? 'yes' : 'no';
-
-  return cons(question, String(answer));
-};
 export default () => gameEngine(gameTask, getGameLogic);
