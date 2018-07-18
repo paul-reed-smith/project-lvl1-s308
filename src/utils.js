@@ -17,14 +17,4 @@ const getUserName = () => {
   return userName;
 };
 
-const wantToPlayAgain = (game) => {
-  const answer = readlineSync.question('\nDo you want to play again? ');
-
-  if (answer === 'yes') {
-    game();
-    return;
-  }
-  console.log('\nGoodbay!');
-};
-
-export { getRandomNum, gameLogicForIs, getUserName, wantToPlayAgain };
+export { getRandomNum, gameLogicForIs, getUserName };
