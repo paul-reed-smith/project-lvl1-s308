@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import getRandomNum from '../utils';
+import { getRandomNum } from '../utils';
 import gameEngine from '../game-engine';
 
 const gameTask = 'What number is missing in this progression?';
@@ -21,7 +21,7 @@ const getGameLogic = () => {
   const hiddenItemNumber = getRandomNum(minHiddenItemNumber, maxHiddenItemNumber);
 
   let res = '';
-  for (let i = 0; i <= numberOfProgressionItems; i += 1) {
+  for (let i = 1; i <= numberOfProgressionItems; i += 1) {
     const progressionItem = firstProgressionItem + (stepOfProgression * (i - 1));
     if (i !== hiddenItemNumber) {
       res += `${progressionItem} `;
