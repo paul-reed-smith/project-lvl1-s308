@@ -11,7 +11,7 @@ This package contains six console simple games.
 
 Before installing, make sure you have [npm](https://www.npmjs.com/get-npm) and [node.js](https://nodejs.org/en/) installed.
 
-```npm i -g project-dmivtr-hexlet-first```
+```npm i -g paul-reed-smith-hexlet-one```
 
 This will install package globaly
 
