@@ -1,9 +1,9 @@
 {
-  "name": "project-dmivtr-hexlet-first",
+  "name": "hexlet-first-project",
   "version": "5.0.2",
   "description": "training project for hexlet.io",
   "keywords": [
-    "dmivtr",
+    "paul-reed-smith",
     "brain-games",
     "hexlet-learning"
   ],
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmivtr/project-lvl1-s308.git"
+    "url": "git+https://github.com/paul-reed-smith/project-lvl1-s308.git"
   },
-  "author": "Dmivrtr",
+  "author": "paul-reed-smith",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dmivtr/project-lvl1-s308/issues"
+    "url": "https://github.com/paul-reed-smith/project-lvl1-s308/issues"
   },
-  "homepage": "https://github.com/dmivtr/project-lvl1-s308#readme",
+  "homepage": "https://github.com/paul-reed-smith/project-lvl1-s308#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
