@@ -1,6 +1,6 @@
 
 ## Brain Games
-[![Maintainability](https://api.codeclimate.com/v1/badges/e4eff6ca224f4afb9fb1/maintainability)](https://codeclimate.com/github/dmivtr/project-lvl1-s308/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/2627434c7a855f94c798/maintainability)](https://codeclimate.com/github/paul-reed-smith/project-lvl1-s308/maintainability)
 [![Build Status](https://travis-ci.org/paul-reed-smith/project-lvl1-s308.svg?branch=master)](https://travis-ci.org/paul-reed-smith/project-lvl1-s308)
 
 #### Discription
