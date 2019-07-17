@@ -24,20 +24,19 @@
   },
   "homepage": "https://github.com/paul-reed-smith/project-lvl1-s308#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.5.2",
     "babel-eslint": "^10.0.2",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^4.19.1",
+    "eslint": "^6.0.1",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.18.0",
-    "braces": "3.0.2"
+    "braces": "^3.0.2"
   },
   "dependencies": {
     "@hexlet/pairs": "^1.0.10",
-    "hexlet-pairs": "^1.0.8",
     "readline-sync": "^1.4.9"
   },
   "bin": {
