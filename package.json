@@ -24,10 +24,8 @@
   },
   "homepage": "https://github.com/paul-reed-smith/project-lvl1-s308#readme",
   "devDependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.4",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
+    "babel/cli": "^7.5.0",
+    "babel/core": "^7.5.4",
     "babel-eslint": "^8.2.6",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
