@@ -29,9 +29,8 @@ const getGameLogic = () => {
       res += '.. ';
     }
   }
-  const question = res;
   const correctAnswer = firstProgressionItem + (stepOfProgression * (hiddenItemNumber - 1));
 
-  return cons(question, String(correctAnswer));
+  return { answer: String(correctAnswer), question: res };
 };
 export default () => gameEngine(gameTask, getGameLogic);

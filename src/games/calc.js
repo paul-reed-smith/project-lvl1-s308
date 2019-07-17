@@ -1,5 +1,3 @@
-
-import { cons } from '@hexlet/pairs';
 import getRandomNum from '../utils';
 import gameEngine from '../game-engine';
 
@@ -22,13 +20,13 @@ const getGameLogic = () => {
   let res;
   switch (num) {
     case 1:
-      res = cons(`${a} + ${b}`, String(a + b));
+      res = { question: `${a} + ${b}`, answer: String(a + b) };
       break;
     case 2:
-      res = cons(`${a} - ${b}`, String(a - b));
+      res = { question: `${a} - ${b}`, answer: String(a - b) };
       break;
     case 3:
-      res = cons(`${a} * ${b}`, String(a * b));
+      res = { question: `${a} * ${b}`, answer: String(a * b) };
       break;
     default:
   }

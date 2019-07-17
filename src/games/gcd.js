@@ -1,4 +1,3 @@
-import { cons } from '@hexlet/pairs';
 import getRandomNum from '../utils';
 import gameEngine from '../game-engine';
 
@@ -24,7 +23,7 @@ const getGameLogic = () => {
   const question = `${firstNum} ${secondNum}`;
   const correctAnswer = findGCD(firstNum, secondNum);
 
-  return cons(question, String(correctAnswer));
+  return { question: [question], answer: String(correctAnswer) };
 };
 
 export default () => gameEngine(gameTask, getGameLogic);

@@ -1,6 +1,6 @@
 {
   "name": "paul-reed-smith-hexlet-one",
-  "version": "5.0.7",
+  "version": "6.0.0",
   "description": "training project for hexlet.io",
   "keywords": [
     "paul-reed-smith",
@@ -36,7 +36,6 @@
     "eslint-plugin-import": "^2.18.0"
   },
   "dependencies": {
-    "@hexlet/pairs": "^1.0.10",
     "readline-sync": "^1.4.9"
   },
   "bin": {

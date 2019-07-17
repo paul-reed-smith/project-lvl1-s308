@@ -1,4 +1,3 @@
-import { cons } from '@hexlet/pairs';
 import getRandomNum from '../utils';
 import gameEngine from '../game-engine';
 
@@ -41,7 +40,7 @@ const getGameLogic = () => {
   const question = getRandomNum(beginOfRange, endOfRange);
   const correctAnswer = getNumberBalanced(question);
 
-  return cons(question, String(correctAnswer));
+  return { question: [question], answer: String(correctAnswer) };
 };
 
 export default () => gameEngine(gameTask, getGameLogic);

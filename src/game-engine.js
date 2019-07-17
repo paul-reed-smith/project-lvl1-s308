@@ -1,5 +1,4 @@
 import readlineSync from 'readline-sync';
-import { car, cdr } from '@hexlet/pairs';
 import { getUserName } from './utils';
 
 const steps = 3;
@@ -12,13 +11,11 @@ const gameEngine = (gameTask, getGameLogic) => {
   console.log(`Hello! ${userName} \n`);
 
   for (let i = 0; i < steps; i += 1) {
-    const gameLogic = getGameLogic();
+    const { question, answer: correctAnswer } = getGameLogic();
 
-    const question = car(gameLogic);
     console.log(`Question : ${question}`);
 
     const userAnswer = readlineSync.question('Your answer: ');
-    const correctAnswer = cdr(gameLogic);
 
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
