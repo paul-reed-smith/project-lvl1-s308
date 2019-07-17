@@ -36,6 +36,7 @@
     "braces": "3.0.2"
   },
   "dependencies": {
+    "@hexlet/pairs": "^1.0.10",
     "hexlet-pairs": "^1.0.8",
     "readline-sync": "^1.4.9"
   },
