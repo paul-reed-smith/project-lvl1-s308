@@ -1,6 +1,6 @@
 {
   "name": "paul-reed-smith-hexlet-one",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "training project for hexlet.io",
   "keywords": [
     "paul-reed-smith",
@@ -24,12 +24,12 @@
   },
   "homepage": "https://github.com/paul-reed-smith/project-lvl1-s308#readme",
   "devDependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.5.4",
-    "babel-eslint": "10.0.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^6.0.1",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.18.0"
