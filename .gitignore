@@ -3,4 +3,3 @@
 /.vscode/
 *.log
 .DS_Store
-babel.config.js
