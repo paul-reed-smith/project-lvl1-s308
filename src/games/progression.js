@@ -1,4 +1,4 @@
-import { cons } from 'hexlet-pairs';
+import { cons } from '@hexlet/pairs';
 import { getRandomNum } from '../utils';
 import gameEngine from '../game-engine';
 

@@ -1,4 +1,4 @@
-import { cons } from 'hexlet-pairs';
+import { cons } from '@hexlet/pairs';
 import readlineSync from 'readline-sync';
 
 const getRandomNum = (min, max) => Math.floor(Math.random() * (max - min) + min);

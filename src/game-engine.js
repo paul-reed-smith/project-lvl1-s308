@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { car, cdr } from 'hexlet-pairs';
+import { car, cdr } from '@hexlet/pairs';
 import { getUserName } from './utils';
 
 const steps = 3;
