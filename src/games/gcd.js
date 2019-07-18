@@ -1,4 +1,4 @@
-import getRandomNum from '../utils';
+import { getRandomNum } from '../utils';
 import gameEngine from '../game-engine';
 
 // This file is main logic of game which ask user to find gcd of two numbers
