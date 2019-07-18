@@ -1,4 +1,4 @@
-import { getRandomNum} from '../utils';
+import { getRandomNum } from '../utils';
 import gameEngine from '../game-engine';
 
 const gameTask = 'Balance the given number.';
