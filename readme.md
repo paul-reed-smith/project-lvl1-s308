@@ -1,13 +1,14 @@
 
-## Brain Games
+# Brain Games
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/2627434c7a855f94c798/maintainability)](https://codeclimate.com/github/paul-reed-smith/project-lvl1-s308/maintainability)
-[![Build Status](https://travis-ci.org/paul-reed-smith/project-lvl1-s308.svg?branch=master)](https://travis-ci.org/paul-reed-smith/project-lvl1-s308)
+![Node.js CI](https://github.com/paul-reed-smith/project-lvl1-s308/workflows/Node.js%20CI/badge.svg)
 
-#### Discription
+## Discription
 
-This package contains six console simple games. 
+This package contains six console simple games.
 
-#### Instalation
+## Instalation
 
 Before installing, make sure you have [npm](https://www.npmjs.com/get-npm) and [node.js](https://nodejs.org/en/) installed.
 
@@ -15,41 +16,42 @@ Before installing, make sure you have [npm](https://www.npmjs.com/get-npm) and [
 
 This will install package globaly
 
-#### Example playing 
+## Example playing
 
 [![asciicast](https://asciinema.org/a/17ANnm5Vo4UXM0nY4b3EZRP0Z.png)](https://asciinema.org/a/17ANnm5Vo4UXM0nY4b3EZRP0Z)
 
-#### Even game 
+## Even game
+
 Answer "yes" if number even otherwise answer "no".
 
 ```brain-even```
 
-#### Calculator
+## Calculator
+
 What is the result of the expression?
 
 ```brain-calc```
 
-#### GCD
+## GCD
+
 Find the greatest common divisor of given numbers.
 
 ```brain-gcd```
 
-#### Find Balanced number 
+## Find Balanced number
+
 Balance the given number.
 
 ```brain-balance```
 
-#### Progression 
+## Progression
+
 What number is missing in this progression?
 
 ```brain-progression```
 
-#### Prime  
+## Prime  
+
 Ask yes if number is prime.
 
 ```brain-prime```
-
-
-
-
-
